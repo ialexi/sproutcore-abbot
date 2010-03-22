@@ -1,16 +1,72 @@
 
 /* @group Core */
-
 body.sc-doc {
-  background-color: white  ;
-  padding: 20px;
-}
-
-.sc-doc {
 	font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
-	font-size: 10px;
+  margin: 0px;
+  margin-bottom:1em;
+  font-size: 10px;
 	line-height: 1;
 }
+
+.sc-doc code {
+  font-family: Monaco, Inconsolata, Courier, fixed-width;
+  font-size: 12px;
+}
+
+.sc-doc pre code {
+  margin-right: 1em;
+  border: 1px solid #a0b0a0;
+  overflow: auto;
+  background: #f5f9f5;
+  display:block;
+  padding: 1em;
+}
+
+.sc-doc .header {
+  background-color: rgb(38, 43, 50);
+  height: 60px;
+  padding-top:17px;
+  padding-bottom:17px;
+  padding-left:2em;
+}
+.sc-doc .header a.img {
+  float: left;
+}
+
+.sc-doc .header .here {
+  float:left;
+  margin-top:27px;
+  margin-left:5px;
+  color: rgb(200, 255, 200);
+  font-size: 25px;
+}
+
+.sc-doc .header span.here {
+  margin-top:34px;
+  font-size:15px;
+  color: white;
+}
+
+.sc-doc .header a.item {
+  float:right;
+  margin-top: 34px;
+  margin-right:10px;
+  color: white;
+  font-size:15px;
+}
+
+.sc-doc .header a.item:hover {
+  text-decoration: underline;
+}
+
+.sc-doc .content {
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.sc-doc .header img {}
+.sc-doc h1, h2, h3, h4, h5, h6 { color: rgb(100, 155, 100); }
 
 /* Set standard size on some things. */
 .sc-doc p, 
@@ -36,7 +92,6 @@ hr
 .sc-doc h2 {
   padding: 0;
   padding-bottom: 3px;
-  border-bottom: 1px #aaa solid;
   text-transform: capitalize;
   margin: 2em 0 0.5em;
   font-size: 2.2em;
@@ -65,6 +120,7 @@ hr
  
 .sc-doc a {
   text-decoration: none ;
+  color: rgb(50, 50, 155);
 }
 
 .sc-doc label {
@@ -133,7 +189,7 @@ hr
 }
 
 .sc-doc .summary li code {
-  font-size: 1em;
+  font-size: .8em;
 }
 
 .sc-doc .summary li .description {
@@ -250,7 +306,7 @@ span.sc-label
 }
 
 #index h2 a:hover {
-	background-color: blue;
+	background-color: rgb(50, 50, 155);
 	color: white;
 }
 

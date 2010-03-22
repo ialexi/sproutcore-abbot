@@ -270,6 +270,8 @@ function publish(symbolSet) {
   var filesIndex = fileindexTemplate.process(allFiles);
   IO.saveFile(publish.conf.outDir, "files"+publish.conf.ext, filesIndex);
   fileindexTemplate = filesIndex = files = null;
+  
+  IO.copyFile(publish.conf.templatesDir+"static/logo.png", publish.conf.outDir);
 }
 
 
